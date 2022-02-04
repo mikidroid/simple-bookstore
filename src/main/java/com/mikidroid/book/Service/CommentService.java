@@ -39,7 +39,7 @@ public class CommentService {
     }
 
     //Create book comment
-    public void create(Integer id,Comment comment)
+    public void create(Comment comment)
     {
        commentRepository.save(comment);
        return;

@@ -32,12 +32,12 @@ public class CommentController {
     }
     
     //Add new comment
-    @PostMapping("/add/{book_id}")
-    public String create(@PathVariable Integer id,@RequestBody Comment comment) throws Exception {
+    @PostMapping("/add")
+    public String create(@RequestBody Comment comment) throws Exception {
      
           //Try to create book and throw error if not successful
           try{
-            commentService.create(id,comment);
+            commentService.create(comment);
             return "success";
           } 
           catch(Throwable e) {
