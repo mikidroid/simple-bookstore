@@ -21,6 +21,6 @@ public class Comment {
         private String name;
         private String body;
         private Integer bookId;   
-        private String created_at;
+        private String createdAt;
         
 }

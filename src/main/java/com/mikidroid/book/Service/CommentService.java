@@ -34,7 +34,7 @@ public class CommentService {
        oldComment.setName(comment.getName()); 
        oldComment.setBody(comment.getBody());
        oldComment.setBookId(comment.getBookId());
-       oldComment.setCreated_at(comment.getCreated_at());
+       oldComment.setCreatedAt(comment.getCreatedAt());
        return;
     }
 
