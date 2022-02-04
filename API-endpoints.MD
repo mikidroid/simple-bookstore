@@ -1,6 +1,6 @@
-## Rest Endpoints for this backend
+# Rest Endpoints for this backend
 
-###  Book Model 
+##  Book Model 
 
 **POST** /api/book/add
 > Adds new book
@@ -14,7 +14,7 @@
 **DELETE** /api/book/delete/{id}
 > Deletes book
 
-###  Comment Model 
+##  Comment Model 
 
 **POST** /api/comment/add
 > Adds new book comment
