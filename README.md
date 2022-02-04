@@ -1,6 +1,6 @@
 "# simple-bookstore" 
 
-This is a library app made with Java Spring boot.
+This is a book app made with Java Spring boot.
 
 This backend service can be used to store book details like;
 1. Title
