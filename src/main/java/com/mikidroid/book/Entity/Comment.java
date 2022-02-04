@@ -20,7 +20,7 @@ public class Comment {
         //Comment database columns
         private String name;
         private String body;
-        private Integer book_id;   
+        private Integer bookId;   
         private String created_at;
         
 }

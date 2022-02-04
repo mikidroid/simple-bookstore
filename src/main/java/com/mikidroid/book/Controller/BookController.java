@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @CrossOrigin
 
 //gives a prefix "api/books" to for easy identification
-@RequestMapping("/api/books")
+@RequestMapping("/api/book")
 
 public class BookController {
 

@@ -1,5 +1,6 @@
 package com.mikidroid.book.Service;
 
+
 import java.util.List;
 
 import com.mikidroid.book.Entity.Comment;
@@ -17,7 +18,7 @@ public class CommentService {
     //Get all book comments
     public List<Comment> getAll(Integer id)
     {
-        return commentRepository.findByBook_id(id);
+        return commentRepository.findByBookId(id);
     }
 
     //Get single book comment
@@ -32,7 +33,7 @@ public class CommentService {
        Comment oldComment = commentRepository.findById(id).orElse(null);
        oldComment.setName(comment.getName()); 
        oldComment.setBody(comment.getBody());
-       oldComment.setBook_id(comment.getBook_id());
+       oldComment.setBookId(comment.getBookId());
        oldComment.setCreated_at(comment.getCreated_at());
        return;
     }

@@ -1,5 +1,6 @@
 package com.mikidroid.book.Controller;
 import java.util.List;
+
 import com.mikidroid.book.Entity.Comment;
 import com.mikidroid.book.Service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,11 +24,11 @@ public class CommentController {
     @Autowired
     CommentService commentService;
 
-    @GetMapping("/{book_id}")
-    public List<Comment> getAll(@PathVariable Integer book_id) {
+    @GetMapping("/{bookId}")
+    public List<Comment> getAll(@PathVariable Integer bookId) {
 
         //Get all comments using book_id
-        return commentService.getAll(book_id);
+        return commentService.getAll(bookId);
     }
     
     //Add new comment
